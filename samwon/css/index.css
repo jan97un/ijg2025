@@ -183,6 +183,12 @@ header .side-btn .menu span:nth-child(2) {
   left: -9999px;
   opacity: 0;
 }
+.main-visual .main-visual-items.on2 {
+  width: calc(100vw - 146px - 184px);
+}
+.main-visual .main-visual-items.hover {
+  width: 257px;
+}
 .main-visual .visual-btn {
   position: absolute;
   left: 0;
@@ -202,6 +208,7 @@ header .side-btn .menu span:nth-child(2) {
   bottom: 0;
   width: 100%;
   z-index: 20;
+  cursor: pointer;
 }
 .main-visual .btn-inner .vertical {
   position: absolute;
@@ -211,7 +218,7 @@ header .side-btn .menu span:nth-child(2) {
   min-height: 40px;
   color: #fff;
   white-space: nowrap;
-  transform: translateY(0vw) rotate(-90deg);
+  transform: rotate(-90deg);
   transform-origin: 0% 100%;
 }
 .main-visual .btn-inner .vertical .item-num {
@@ -223,6 +230,11 @@ header .side-btn .menu span:nth-child(2) {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.2;
+  opacity: 1;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.main-visual .btn-inner .vertical .item-num.off {
+  opacity: 0;
 }
 .main-visual .btn-inner .vertical .item-txt {
   position: absolute;
@@ -233,6 +245,10 @@ header .side-btn .menu span:nth-child(2) {
   font-weight: 700;
   line-height: 1.4;
   opacity: 0;
+  transition: all 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.main-visual .btn-inner .vertical .item-txt.on {
+  opacity: 1;
 }
 .main-visual .main-visual-items:nth-child(1) .visual-btn {
   z-index: 11;
