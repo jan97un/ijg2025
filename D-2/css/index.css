@@ -231,11 +231,7 @@ footer .family p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.overlay.on {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal {
   width: 90%;
