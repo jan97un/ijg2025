@@ -32,3 +32,11 @@ setInterval(function () {
     $(this).hide;
   });
 }, interval);
+
+$(".overlay").hide();
+$(".notice .popup-btn").on("click", function () {
+  $(".overlay").show();
+});
+$(".modal .close").on("click", function () {
+  $(".overlay").hide();
+});
